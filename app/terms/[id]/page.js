@@ -24,14 +24,14 @@ export default async function BlockPage({ params }) {
       icon: "🔗",
       title: "Пары",
       description: "Соединяй термин с правильным определением",
-      available: false,
+      available: true,
     },
     {
       id: "timed",
       icon: "⏱️",
       title: "Тест на 60 секунд",
       description: "Ответь на максимум вопросов за минуту",
-      available: false,
+      available: true,
     },
   ];
 

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import HomeButton from "@/app/components/HomeButton";
 
 export default function TestClient({ lecture, test }) {
   const [stage, setStage] = useState("start"); // "start" | "question" | "finished"
@@ -47,6 +48,7 @@ export default function TestClient({ lecture, test }) {
   if (stage === "start") {
     return (
       <div className="min-h-screen bg-zinc-50 px-4 py-12">
+        <HomeButton />
         <div className="max-w-2xl mx-auto">
           <Link
             href={`/lectures/${lecture.id}`}
@@ -106,6 +108,7 @@ export default function TestClient({ lecture, test }) {
 
     return (
       <div className="min-h-screen bg-zinc-50 px-4 py-12">
+        <HomeButton />
         <div className="max-w-2xl mx-auto">
           <Link
             href={`/lectures/${lecture.id}`}
@@ -161,6 +164,7 @@ export default function TestClient({ lecture, test }) {
 
   return (
     <div className="min-h-screen bg-zinc-50 px-4 py-12">
+        <HomeButton />
       <div className="max-w-2xl mx-auto">
         <div className="flex items-center justify-between mb-6">
           <Link

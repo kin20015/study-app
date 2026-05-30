@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import HomeButton from "@/app/components/HomeButton";
 
 // Вспомогательная функция: перемешивает массив (алгоритм Фишера-Йетса)
 function shuffleArray(array) {
@@ -77,6 +78,7 @@ export default function CardsClient({ block }) {
   if (stage === "start") {
     return (
       <div className="min-h-screen bg-zinc-50 px-4 py-12">
+        <HomeButton />
         <div className="max-w-2xl mx-auto">
           <Link
             href={`/terms/${block.id}`}
@@ -177,6 +179,7 @@ export default function CardsClient({ block }) {
 
     return (
       <div className="min-h-screen bg-zinc-50 px-4 py-12">
+        <HomeButton />
         <div className="max-w-2xl mx-auto">
           <Link
             href={`/terms/${block.id}`}
@@ -249,6 +252,7 @@ export default function CardsClient({ block }) {
 
   return (
     <div className="min-h-screen bg-zinc-50 px-4 py-12">
+        <HomeButton />
       <div className="max-w-2xl mx-auto">
         <div className="flex items-center justify-between mb-6">
           <button
